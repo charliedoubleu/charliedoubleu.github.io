@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <div className='home'>
       <div className="scroll">
-        <img src={`./scroll/${count.toString()}.png`}/>
+        <img src={require(`./scroll/${count.toString()}.png`)}/>
 
       {/* </div> */}
       {/* <div className="here"> */}
