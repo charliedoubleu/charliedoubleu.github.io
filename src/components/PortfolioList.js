@@ -14,7 +14,7 @@ function Card({ page }) {
         {/* <Link to={`/projects/${page.id}`}> */}
         
             
-            <img className = {!flipped ? 'thumbnail' : 'flipped'} src={page.thumbnail} alt='project' />
+            <img className = {!flipped ? 'thumbnail' : 'flipped'} src={require(page.thumbnail)} alt='project' />
             <img className = {flipped ? 'border' : 'flipped'} src={border} alt='border' />
             <div className= {flipped ? "back" : 'flipped'}>
                 <h1>{page.title}</h1>
