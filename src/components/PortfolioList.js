@@ -15,8 +15,7 @@ function Card({ page }) {
         
             
             {/* <img className = {!flipped ? 'thumbnail' : 'flipped'} src={process.env.PUBLIC_URL + page.thumbnail} alt='project' /> */}
-            <img className = {!flipped ? 'thumbnail' : 'flipped'} src={process.env.PUBLIC_URL + './thumbnails/subparticles.png'} alt='project' />
-            <img className = {!flipped ? 'thumbnail' : 'flipped'} src='./thumbnails/subparticles.png' alt='project' />
+            <img className = {!flipped ? 'thumbnail' : 'flipped'} src={process.env.PUBLIC_URL + "/thumbnails/flyonwall.png"} alt='project' />
 
             <img className = {flipped ? 'border' : 'flipped'} src={border} alt='border' />
             <div className= {flipped ? "back" : 'flipped'}>
