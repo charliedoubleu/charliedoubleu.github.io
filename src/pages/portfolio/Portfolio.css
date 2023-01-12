@@ -1,0 +1,32 @@
+.portfolio{
+    max-width: 1200px;
+    margin: 60px auto;
+}
+.portfolio .filter-container{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.portfolio .filter-container button{
+    font-family: monospace;
+}
+.portfolio button{
+    margin-right: 15px;
+    /* min-width: 5rem; */
+    padding: 0.5rem 1rem;
+    background: rgb(225, 225, 225);
+    color: #333;
+    border-radius: 15px;
+    border: 2px solid rgb(25,25,25);
+    font-weight: bold;
+    cursor: pointer;
+}
+.portfolio button:hover{
+    background: #333;
+    color: rgb(230, 230, 230);
+}
+button.active{
+    background: #333;
+    color: rgb(230, 230, 230);
+}

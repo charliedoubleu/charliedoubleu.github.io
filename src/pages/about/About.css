@@ -1,0 +1,81 @@
+.bio{
+    position:relative;
+    max-width: 51%;
+    min-width: 50%;
+    margin: auto;
+    margin-top: 15%;
+    font-size: 1.25rem;
+    word-spacing: 1px;
+    line-height: 125%;
+    color: rgb(200, 200, 200);
+    max-height: 450px;
+    overflow-y: auto;
+    z-index: 10;
+}
+.about img{
+    opacity: 0.7;
+
+}
+.contact-link{
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(200, 200, 200);
+
+
+}
+.cloud{
+    position: fixed;
+    top: 7.5%;
+    right: 30px;
+    width: 40%;
+}
+.cloud{
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0.7;
+    }
+}
+.tree{
+    position: fixed;
+    bottom: 0;
+    right: 45%;
+    float: left;
+    width: 80%;
+    z-index: 1;
+}
+.tree{
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+@media (max-width: 700px) {
+    .cloud{
+        display: none;
+    }
+    .tree{
+        display: none;
+    }
+    .bio{
+        max-width: 75%;
+        margin: auto;
+        margin-top: 10%;
+        font-size: larger;
+        word-spacing: 1px;
+        line-height: 125%;
+        color: white;
+        max-height: 450px;
+    }
+
+
+
+}

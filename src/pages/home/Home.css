@@ -1,0 +1,54 @@
+.home{
+    height: 350vh;
+    padding-top: 75px;
+}
+
+.scroll img{
+    max-width: 70%;
+    height: auto;
+}
+.herebtn{
+    display: block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+}
+.herebtn{
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    position: sticky;
+}
+.here{
+    position: relative;
+}
+
+@media (max-width: 700px) {
+    .scroll img{
+        max-width: 90%;
+    }
+    .scroll{
+        position:fixed;
+        margin-top: 170px;
+    }
+
+
+
+}

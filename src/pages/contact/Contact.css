@@ -1,0 +1,35 @@
+.contact-form{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-form h2{
+    font-size: 30px;
+    color: #ddd;
+    margin: 30px 0;
+}
+
+.contact-form input, .contact-form textarea{
+    background: #ddd;
+    width: 100%;
+    padding: 6px 10px;
+    margin: 20px 0px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: block;
+}
+.contact-form .submit{
+    background: #333;
+    color: #ddd;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.contact-form .submit:hover{
+    background: #444;
+}
+
