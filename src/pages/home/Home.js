@@ -23,7 +23,7 @@ export default function Home() {
     if(progress > 90){
       setFade(true)
     }
-    if(progress < 93 ){
+    if(progress > -1 && progress < 93 ){
       setCount(progress)
     }
   }
