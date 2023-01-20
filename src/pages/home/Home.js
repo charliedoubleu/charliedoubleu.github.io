@@ -1,12 +1,33 @@
 import './Home.css'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { IMAGES } from "./Images"
 import here from '../../assets/here.png'
 import hereHov from '../../assets/hereHov.png'
+
+
 
 export default function Home() {
   const [count, setCount] = useState(0)
   const [fade, setFade] = useState(false)
+  const [loaded, setLoaded] = useState(false)
+
+  useEffect(() => {
+    const loadImage = image => {
+      return new Promise((resolve, reject) => {
+        const loadImg = new Image()
+        loadImg.src = image.path
+        loadImg.onload = () =>
+          setTimeout(() => {
+            resolve(image.path)
+          }, 2000)
+      })
+    }
+
+    Promise.all(IMAGES.map(image => loadImage(image)))
+      .then(() => setLoaded(true))
+      .catch(err => console.log("Failed to load images", err))
+  }, [])
 
   useEffect(() => {
     window.addEventListener("scroll", scrollProgress)
@@ -30,8 +51,10 @@ export default function Home() {
 
   return (
     <div className='home'>
+      <h2 className={!loaded ? 'loaded' : 'loading'}>scrolling animation is loading...</h2>
       <div className="scroll">
-        <img src={`./scroll/${count.toString()}.png`}/>
+        <img className={loaded ? 'loaded' : 'loading'} src={`./scroll/${count.toString()}.png`}/>
+        
 
       {/* </div> */}
       {/* <div className="here"> */}

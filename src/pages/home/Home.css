@@ -7,6 +7,16 @@
     max-width: 70%;
     height: auto;
 }
+.loaded{
+    display: block;
+}
+.loading{
+    display: none;
+}
+.home h2{
+    color: rgb(200, 200, 200);
+    text-align: center;
+}
 .herebtn{
     display: block;
     height: auto;
