@@ -1,15 +1,15 @@
 .bio{
     position:relative;
-    max-width: 51%;
-    min-width: 50%;
+    text-align: center;
+    max-width: 60%;
+    /* min-width: 50%; */
     margin: auto;
     margin-top: 15%;
-    font-size: 1.25rem;
+    padding-bottom: 10%;
+    font-size: 1.5rem;
     word-spacing: 1px;
     line-height: 125%;
     color: rgb(200, 200, 200);
-    max-height: 450px;
-    overflow-y: auto;
     z-index: 10;
 }
 .about img{
@@ -25,7 +25,7 @@
 
 }
 .cloud{
-    position: fixed;
+    position: absolute;
     top: 7.5%;
     right: 30px;
     width: 40%;
@@ -44,8 +44,8 @@
     }
 }
 .tree{
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    /* bottom: 0; */
     right: 45%;
     float: left;
     width: 80%;
