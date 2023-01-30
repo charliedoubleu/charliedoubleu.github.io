@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
 import Home from './pages/home/Home';
@@ -22,6 +22,7 @@ function App() {
           <Route path="/portfolio/" element={<Portfolio />} />
           {/* <Route path="/projects/:id" element={<Project />} /> */}
           <Route path="/contact" element={<Contact />} />
+          <Route path='*' element={<Navigate to='/' />}/>
         </Routes>
       </BrowserRouter>
     </div>
