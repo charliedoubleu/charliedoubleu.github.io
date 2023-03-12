@@ -17,9 +17,9 @@ function Filter({projects, setFiltered, activeTag, setActiveTag}){
             className={activeTag === 0 ? 'active' : ''} 
             onClick={() => setActiveTag(0)}>all</button>
             <button className={activeTag === 1 ? 'active' : ''} 
-            onClick={() => setActiveTag(1)}>game dev</button>
+            onClick={() => setActiveTag(1)}>games</button>
             <button className={activeTag === 2 ? 'active' : ''} 
-            onClick={() => setActiveTag(2)}>web dev</button>
+            onClick={() => setActiveTag(2)}>web</button>
             <button className={activeTag === 3 ? 'active' : ''} 
             onClick={() => setActiveTag(3)}>animations</button>
         </div>
